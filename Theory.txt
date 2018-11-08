@@ -1,0 +1,197 @@
+HTTP-(Hyper Text Transfer Protocol)
+      Methods:- 
+	GET - This method is used to retrieve information from the server.
+	POST - This request is used to send data to the server.To upload file from client machine to server machine  we use POST method.
+
+	PUT - The PUT method replaces all current representations of the target resource (updates).If resource is not present in the server then PUT method will create  the resource.
+
+	DELETE - This method is used to remove all current representations of the target resource.
+
+	HEAD - This method is same as GET method ,but without the response body i.e only transfers status.  
+
+	CONNECT - The CONNECT method is used by client to establishes a network to the server.
+
+	OPTIONS - OPTION method is used by the client to find out what are the HTTp methods and other options supported by the server.
+
+	  PATCH - The PATCH method is used to apply partial modifications to a resource.
+
+	TRACE - The TRACE method performs a message loop-back test along the path to the target resource.This is used for debugging purpose at the time of development.
+
+...........................................................................................................................................................................................................................................................................
+
+HTTP response codes :-
+	HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes- informational responses, successful responses, redirects, client errors, and servers errors.
+ 
+Information responses - 1xx
+ HTTP status code  100 continue
+ HTTP status code 101 switc hing protocol
+HTTP status 103 chechkpoint 
+
+success - 2xx
+201 created
+202 accepted
+205 reset content 
+206 partial content 
+
+redirection - 3xx
+301 moved permanently
+302 found
+304 not modified
+305 use proxy
+307 temporary redirect
+ 
+client error - 4xx
+400 bad request 
+401 unauthorized
+403 forbidden
+404 not found
+408 request timeout
+
+server error  - 5xx
+500 internal server error
+502 bad gateway
+503 service unavailable 
+504 gateway timeout
+
+...........................................................................................................................................................................................................................................................................
+
+Idempotency - 
+	It is a property of certain operations in coumputer science ,that  can be applied multiple times without changing the result beyond the initila application.
+ 
+   GET ,PUT ,DELETE -Idemponent (safely repeatable)
+   POST -Non Idempotent (cannot be repeated safely)
+
+...........................................................................................................................................................................................................................................................................
+
+Content Delivery network  (CDN)-
+
+	A content delivery network  is a system of distributed servers  that deliver pages and other Web content to a user, based on the geographic locations of the user.
+	This service is effective in speeding the delivery of content of websites with high traffic and websites that have global reach. The closer the CDN server is to the user geographically, the faster the content will be delivered to the user.
+	Servers nearest to the website visitor respond to the request. The content delivery network copies the pages of a website to a network of servers that are dispersed at geographically different locations, caching the contents of the page. When a user requests a webpage that is part of a content delivery network, the CDN will redirect the request from the originating site's server to a server in the CDN that is closest to the user and deliver the cached content. CDNs will also communicate with the originating server to deliver any content that has not been previously cached.The only way a user would know if a CDN has been accessed is if the delivered URL is different than the URL that has been requested.
+...........................................................................................................................................................................................................................................................................
+
+MEAN Stack and MERN Stack -
+
+	MEAN is a set of Open Source components that together, provide an end-to-end framework for building dynamic web applications; starting from the top (code running in the browser) to the bottom (database).
+
+Angular: Front-end web app framework; runs your JavaScript code in the user's browser, allowing your application UI to be dynamic
+
+Express: Back-end web application framework running on top of Node.js
+
+Node.js : JavaScript runtime environment – lets you implement your application back-end in JavaScript
+
+MongoDB : Document database – used by your back-end application to store its data as JSON (JavaScript Object Notation) documents
+ 
+MERN - It is same as MEAN except we use React instead of Angular. Angular 2 is a little more powerful while React is easier for developers to get up to speed with and use.
+
+...........................................................................................................................................................................................................................................................................
+
+Compiled languages adavanatges  over  interpreted languages -
+
+	Compilers can find many inconsistencies in the program compile-time, e.g. type errors. An interpreted program will encounter such bugs run-time, thus more bugs are delivered to the customer in an interpreted toolset.
+	The ececutable file is optimized by the compiler so it execute faster.User do not have to execute the program on the sam machine it was built.the compiler runs only once, then you have a portable executable that just runs by itself. Interpreter has to re-do all the work every time you want to run a program through it. It also does not have any overhead to run a compiled program if it is a native machine code. If it is a vm bytecode like java bytecode, the overhead is still much less than while running the interpreted program.
+
+...........................................................................................................................................................................................................................................................................
+
+Time And Space Complexity - 
+	
+	While analyzing an algorithm, we consider time complexity and space complexity.They  depend on size of input. Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.we use 3 notaion for analysis :
+
+O-notaion : gives information about worest case.
+omega notation: It gives information about best case.
+theta notaion:gives information about average case.
+
+...........................................................................................................................................................................................................................................................................
+
+
+Node.js 
+	It is fast ,Non blocking i/o(reading and writing),single programming language to write both client and servier side(Java script),cross platfrom(can run on linux,windows,mac),lightweight,single-threaded.
+
+...........................................................................................................................................................................................................................................................................
+
+Data Structure:
+
+A data structure is a specialized format for organizing and storing data. General data structure types include array, file, linked list , table, tree. Any data structure is designed to organize data to suit a specific purpose.
+
+...........................................................................................................................................................................................................................................................................
+
+Event Loop - 
+	The Event loop is a queue of callback functions.When an async function executes, the call back function is pushed into a queue.The javascript engine doesn't start processing the event loop until the code after an async function has executed.
+
+...........................................................................................................................................................................................................................................................................
+
+Types of Operating Systems :-
+	1. Batch Operating System 2. Time-Sharing Operating Systems 3. Distributed Operating System 4. Network Operating System
+	5. Real-Time Operating System
+
+1. Batch Operating System –
+	This type of operating system do not interact with the computer directly. It is the responsibility of operator to sort the jobs with similar needs.
+    Eg: Payroll System, Bank Statements etc.
+
+2. Time-Sharing Operating Systems –
+	 Each task has given some time to execute, so that all the tasks work efficiently. These systems are also known as Multitasking Systems. 
+      Advantages - less chances of duplication of software. Disadvantages - Data Communication problem.
+      Eg. Multics, Unix etc
+
+3. Distributed Operating System – 
+	Independent systems possess their own memory unit and CPU.These are referred as loosely coupled systems or distributed systems.
+      Advantages - Electronic mail increases the data exchange speed. Disadvantages -  Failure of the main network will stop the entire communication.
+      Eg.LOCUS.
+
+4. Network Operating System –
+ 	These systems runs on a server and provides the capability to manage data, users, groups, security, applications, and other networking functions.
+     Advantages - It is new technologies and hardware up-gradation are easily integrated to the system. Disadvantage -depend on central location for most operations.
+     Eg. Microsoft Windows Server 2008, UNIX, Linux, Mac OS X
+			     
+5. Real-Time Operating System –
+	The time interval required to process and respond to inputs is very small. This time interval is called response time.
+        They are 2 tyeps	   1) Hard Real-Time Systems       2) Soft Real-Time Systems
+         Eg. Scientific experiments, industrial control systems, weapon systems, robots etc.
+...........................................................................................................................................................................................................................................................................
+
+Multiprocessing :-
+            -> Multiprocessing is adding more number of or CPUs/processors to the system which increases the computing speed of the system.
+            -> Multiprocessing can be classified as symmetric multiprocessing and asymmetric multiprocessing. 
+            -> In symmetric multiprocessing, all processors are free to run any process in a system.
+            -> In Asymmetric multiprocessing, there is a master-slave relationship among the processors.
+
+Multithreading :-
+            ->  Multithreading is allowing a process to create more threads which increase the responsiveness of the system.
+            ->  Multiple threads of a single process are executed concurrently.
+
+Thread :-
+            ->  A thread of a process means a code segment of a process, which has its own thread ID, program counter, registers and stack and can execute independently.
+...........................................................................................................................................................................................................................................................................
+          
+Multi Thread :-
+            -> Multithread or Multithreading is used while describing CPU threads.
+            -> Multithreading is allowing a process to create more threads which increase the responsiveness of the system. Multiple threads of a single process are executed concurrently.
+            -> Posix threads are available for Unix like operating systems.
+
+Single Thread :-
+             -> Systems with a single processor generally implement multithreading by time slicing.
+             -> The asynchronous processing on a single thread could provide more performance and scalability under typical web loads than the typical thread-based implementation.
+...........................................................................................................................................................................................................................................................................
+
+V8 Engine :-
+            -> Chrome V8, or simply V8, is an open-source JavaScript engine.
+            -> It has also been used in Couchbase, MongoDB and Node.js that are used server-side.
+   Process :-
+          1) V8 compiles JavaScript directly to native machine code before executing the whole program
+          2) The whole program to machine code and executing it from a filesystem. 
+          3) The compiled code is additionally optimized dynamically at runtime, based on process of the code's execution profile. 
+         4) Optimization techniques used include inline caching. 
+
+...........................................................................................................................................................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+ 
