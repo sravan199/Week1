@@ -78,9 +78,9 @@ Angular: Front-end web app framework; runs your JavaScript code in the user's br
 
 Express: Back-end web application framework running on top of Node.js
 
-Node.js : JavaScript runtime environment – lets you implement your application back-end in JavaScript
+Node.js : JavaScript runtime environment â€“ lets you implement your application back-end in JavaScript
 
-MongoDB : Document database – used by your back-end application to store its data as JSON (JavaScript Object Notation) documents
+MongoDB : Document database â€“ used by your back-end application to store its data as JSON (JavaScript Object Notation) documents
  
 MERN - It is same as MEAN except we use React instead of Angular. Angular 2 is a little more powerful while React is easier for developers to get up to speed with and use.
 
@@ -124,26 +124,26 @@ Types of Operating Systems :-
 	1. Batch Operating System 2. Time-Sharing Operating Systems 3. Distributed Operating System 4. Network Operating System
 	5. Real-Time Operating System
 
-1. Batch Operating System –
+1. Batch Operating System â€“
 	This type of operating system do not interact with the computer directly. It is the responsibility of operator to sort the jobs with similar needs.
     Eg: Payroll System, Bank Statements etc.
 
-2. Time-Sharing Operating Systems –
+2. Time-Sharing Operating Systems â€“
 	 Each task has given some time to execute, so that all the tasks work efficiently. These systems are also known as Multitasking Systems. 
       Advantages - less chances of duplication of software. Disadvantages - Data Communication problem.
       Eg. Multics, Unix etc
 
-3. Distributed Operating System – 
+3. Distributed Operating System â€“ 
 	Independent systems possess their own memory unit and CPU.These are referred as loosely coupled systems or distributed systems.
       Advantages - Electronic mail increases the data exchange speed. Disadvantages -  Failure of the main network will stop the entire communication.
       Eg.LOCUS.
 
-4. Network Operating System –
+4. Network Operating System â€“
  	These systems runs on a server and provides the capability to manage data, users, groups, security, applications, and other networking functions.
      Advantages - It is new technologies and hardware up-gradation are easily integrated to the system. Disadvantage -depend on central location for most operations.
      Eg. Microsoft Windows Server 2008, UNIX, Linux, Mac OS X
 			     
-5. Real-Time Operating System –
+5. Real-Time Operating System â€“
 	The time interval required to process and respond to inputs is very small. This time interval is called response time.
         They are 2 tyeps	   1) Hard Real-Time Systems       2) Soft Real-Time Systems
          Eg. Scientific experiments, industrial control systems, weapon systems, robots etc.
@@ -181,6 +181,15 @@ V8 Engine :-
           2) The whole program to machine code and executing it from a filesystem. 
           3) The compiled code is additionally optimized dynamically at runtime, based on process of the code's execution profile. 
          4) Optimization techniques used include inline caching. 
+	 
+   Libuv :-
+	->Libuv is a multiplatform c library that provides support for asynchronous io based on event loops.
+	->It is written in C.
+	->It supports kqueue, solaris.
+	
+Non Blocking io:-
+		Non blocking io means an io request is queued straight away and the function returns.This happens because the event 
+loop is unable to continue running java script while a blocking operation is occurring. All of the io methods in node js library provides asynchronous versions which are non blocking and accept call back functions.
 
 ...........................................................................................................................................................................................................................................................................
 
