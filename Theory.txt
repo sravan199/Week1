@@ -1,4 +1,4 @@
-HTTP-(Hyper Text Transfer Protocol)
+﻿HTTP-(Hyper Text Transfer Protocol)
       Methods:- 
 	GET - This method is used to retrieve information from the server.
 	POST - This request is used to send data to the server.To upload file from client machine to server machine  we use POST method.
@@ -24,7 +24,8 @@ HTTP response codes :-
  
 Information responses - 1xx
  HTTP status code  100 continue
- HTTP status code 101 switc hing protocol
+ HTTP status code 101 switc hing protocol 
+
 HTTP status 103 chechkpoint 
 
 success - 2xx
